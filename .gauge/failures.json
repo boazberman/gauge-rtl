@@ -1,0 +1,7 @@
+{
+	"Flags": {},
+	"FailedItems": [
+		"specs\\example.spec:14",
+		"specs\\example.spec:22"
+	]
+}

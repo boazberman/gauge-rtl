@@ -1,0 +1,217 @@
+22:52:25.285 Checking updates...
+22:52:40.087 Compatible Html Report plugin version to current Gauge version 0.6.2 not found
+22:52:40.101 # Specification Heading
+22:52:40.106 ## Vowel counts in single word
+22:52:40.109 * Vowels in English language are "aeiou".
+
+22:52:40.147 * The word "gauge" has "3" vowels.
+
+22:52:40.164 ## Vowel counts in multiple word
+22:52:40.166 * Vowels in English language are "aeiou".
+
+22:52:40.170 * Almost all words have vowels 
+
+     |Word  |Vowel Count|
+     |------|-----------|
+     |Gauge |3          |
+     |Mingle|2          |
+     |Snap  |1          |
+     |GoCD  |1          |
+     |Rhythm|0          |
+22:52:40.386 Specifications:	1 executed	1 passed	0 failed	0 skipped
+22:52:40.387 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+22:52:40.391 
+Total time taken: 97ms
+22:52:40.392 Updates are available. Run gauge --check-updates for more info.
+22:52:56.351 Checking updates...
+22:52:56.929 Gauge     		0.7.0     	Download the installer from http://getgauge.io/get-started/
+22:55:43.691 Checking updates...
+22:55:47.291 # Specification Heading
+22:55:47.293 ## Vowel counts in single word
+22:55:47.295 * Vowels in English language are "aeiou".
+
+22:55:47.328 * The word "gauge" has "3" vowels.
+
+22:55:47.342 ## Vowel counts in multiple word
+22:55:47.344 * Vowels in English language are "aeiou".
+
+22:55:47.347 * Almost all words have vowels 
+
+     |Word  |Vowel Count|
+     |------|-----------|
+     |Gauge |3          |
+     |Mingle|2          |
+     |Snap  |1          |
+     |GoCD  |1          |
+     |Rhythm|0          |
+22:55:48.062 Plugin [Html Report] with pid [8928] has exited
+22:55:48.163 Specifications:	1 executed	1 passed	0 failed	0 skipped
+22:55:48.163 Scenarios:	2 executed	2 passed	0 failed	0 skipped
+22:55:48.164 
+Total time taken: 607ms
+23:01:41.374 Got a kill message. Killing runner.
+23:01:45.388 Killing runner with PID:3084 forcefully
+23:14:58.387 Checking updates...
+23:15:05.503 [ValidationError] D:\Git\gauge-rtl\specs\example.spec:11: Step implementation not found => 'אמות הקריאה (אות המציינת תנועה) בעברית הן "אהוי".'
+23:15:05.506 [ValidationError] D:\Git\gauge-rtl\specs\example.spec:18: Step implementation not found => 'המילה "גואג'" מכילה "3" אמות קריאה.'
+23:15:05.506 [ValidationError] D:\Git\gauge-rtl\specs\example.spec:28: Step implementation not found => 'כמעט לכל המילים יש אמות קריאה <table>'
+23:15:05.929 Plugin [Html Report] with pid [13500] has exited
+23:15:06.133 Specifications:	0 executed	0 passed	0 failed	1 skipped
+23:15:06.133 Scenarios:	0 executed	0 passed	0 failed	2 skipped
+23:15:06.135 
+Total time taken: 199ms
+23:17:46.568 Checking updates...
+23:17:54.091 # כותרת האיפיון
+23:17:54.095 ## ספירת אמות הקריאה במילה בודדה
+23:17:54.099 * אמות הקריאה (אות המציינת תנועה) בעברית הן "אהוי".
+
+23:17:54.137 * המילה "גואג'" מכילה "3" אמות קריאה.
+
+23:17:56.064 Failed Step: המילה "גואג'" מכילה "3" אמות קריאה.
+23:17:56.064 Error Message: java.lang.AssertionError: expected:<3> but was:<2>
+23:17:56.064 Specification: specs\example.spec:18
+23:17:56.064 Stacktrace: 
+org.junit.Assert.fail(Assert.java:88)
+org.junit.Assert.failNotEquals(Assert.java:834)
+org.junit.Assert.assertEquals(Assert.java:645)
+org.junit.Assert.assertEquals(Assert.java:631)
+StepImplementation.verifyVowelsCountInWord(StepImplementation.java:24)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:32)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:124)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:81)
+com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:62)
+com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:24)
+com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:42)
+com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:31)
+com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:34)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+23:17:56.066 ## ספירת אמות הקריאה במספר רב של מילים
+23:17:56.068 * אמות הקריאה (אות המציינת תנועה) בעברית הן "אהוי".
+
+23:17:56.077 * כמעט לכל המילים יש אמות קריאה 
+
+     |מילה    |מספר אמות קריאה|
+     |------------|----------------------------|
+     |גואג'   |3                           |
+     |מינגל  |2                           |
+     |סנאפ    |1                           |
+     |גוסידי|3                           |
+     |רידם    |1                           |
+     |טסט      |0                           |
+23:17:56.570 Failed Step: כמעט לכל המילים יש אמות קריאה
+23:17:56.570 Error Message: java.lang.NumberFormatException: For input string: ""
+23:17:56.570 Specification: specs\example.spec:28
+23:17:56.571 Stacktrace: 
+java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+java.lang.Integer.parseInt(Integer.java:592)
+java.lang.Integer.parseInt(Integer.java:615)
+StepImplementation.verifyVowelsCountInMultipleWords(StepImplementation.java:31)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:32)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:124)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:81)
+com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:62)
+com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:24)
+com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:42)
+com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:31)
+com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:34)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+23:17:56.786 Plugin [Html Report] with pid [3816] has exited
+23:17:57.087 Specifications:	1 executed	0 passed	1 failed	0 skipped
+23:17:57.087 Scenarios:	2 executed	0 passed	2 failed	0 skipped
+23:17:57.094 
+Total time taken: 2.705s
+23:22:25.797 [ParseError] D:\Git\gauge-rtl\specs\example.spec:24 Scenario heading should have at least one character => '
+'
+23:22:25.799 [ParseError] D:\Git\gauge-rtl\specs\example.spec:39 Scenario heading should have at least one character => '
+'
+23:22:25.807 [ParseError] D:\Git\gauge-rtl\specs\example.spec:2 Spec heading should have at least one character => ''
+23:22:25.809 [ParseError] D:\Git\gauge-rtl\specs\example.spec:39 Duplicate scenario definition '
+' found in the same specification => ''
+23:22:25.810 [ParseWarning] D:\Git\gauge-rtl\specs\example.spec:55 Table not associated with a step, ignoring table
+23:22:25.812 [ParseWarning] D:\Git\gauge-rtl\specs\example.spec:57 Table not associated with a step, ignoring table
+23:22:25.815 [ParseWarning] D:\Git\gauge-rtl\specs\example.spec:59 Table not associated with a step, ignoring table
+23:22:25.821 [ParseWarning] D:\Git\gauge-rtl\specs\example.spec:61 Table not associated with a step, ignoring table
+23:22:25.824 [ParseWarning] D:\Git\gauge-rtl\specs\example.spec:63 Table not associated with a step, ignoring table
+23:22:25.826 [ParseWarning] D:\Git\gauge-rtl\specs\example.spec:65 Table not associated with a step, ignoring table
+23:22:25.827 [ParseWarning] D:\Git\gauge-rtl\specs\example.spec:67 Table not associated with a step, ignoring table
+23:22:27.189 Checking updates...
+23:34:54.016 Checking updates...
+23:34:58.488 # כותרת האיפיון
+23:34:58.494 ## ספירת אמות הקריאה במילה בודדה
+23:34:58.497 * אמות הקריאה (אות המציינת תנועה) בעברית הן "אהוי".
+
+23:34:58.533 * המילה "גואג" מכילה "3" אמות קריאה.
+
+23:34:59.652 Failed Step: המילה "גואג" מכילה "3" אמות קריאה.
+23:34:59.652 Error Message: java.lang.AssertionError: expected:<3> but was:<2>
+23:34:59.652 Specification: specs\example.spec:19
+23:34:59.652 Stacktrace: 
+org.junit.Assert.fail(Assert.java:88)
+org.junit.Assert.failNotEquals(Assert.java:834)
+org.junit.Assert.assertEquals(Assert.java:645)
+org.junit.Assert.assertEquals(Assert.java:631)
+StepImplementation.verifyVowelsCountInWord(StepImplementation.java:24)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:32)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:124)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:81)
+com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:62)
+com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:24)
+com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:42)
+com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:31)
+com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:34)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+23:34:59.656 ## ספירת אמות הקריאה במספר רב של מילים
+23:34:59.658 * אמות הקריאה (אות המציינת תנועה) בעברית הן "אהוי".
+
+23:34:59.668 * כמעט לכל המילים יש אמות קריאה 
+
+     |מילה    |מספר אמות קריאה|
+     |------------|----------------------------|
+     |גואג    |3                           |
+     |מינגל  |2                           |
+     |סנאפ    |1                           |
+     |גוסידי|3                           |
+     |רידם    |1                           |
+     |טסט      |0                           |
+23:35:00.074 Failed Step: כמעט לכל המילים יש אמות קריאה
+23:35:00.074 Error Message: java.lang.NumberFormatException: For input string: ""
+23:35:00.074 Specification: specs\example.spec:29
+23:35:00.074 Stacktrace: 
+java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+java.lang.Integer.parseInt(Integer.java:592)
+java.lang.Integer.parseInt(Integer.java:615)
+StepImplementation.verifyVowelsCountInMultipleWords(StepImplementation.java:31)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:498)
+com.thoughtworks.gauge.execution.MethodExecutor.execute(MethodExecutor.java:32)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStepMethod(StepExecutionStage.java:124)
+com.thoughtworks.gauge.execution.StepExecutionStage.executeStep(StepExecutionStage.java:81)
+com.thoughtworks.gauge.execution.StepExecutionStage.execute(StepExecutionStage.java:62)
+com.thoughtworks.gauge.execution.AbstractExecutionStage.executeNext(AbstractExecutionStage.java:24)
+com.thoughtworks.gauge.execution.HookExecutionStage.execute(HookExecutionStage.java:42)
+com.thoughtworks.gauge.execution.ExecutionPipeline.start(ExecutionPipeline.java:31)
+com.thoughtworks.gauge.processor.ExecuteStepProcessor.process(ExecuteStepProcessor.java:34)
+com.thoughtworks.gauge.connection.MessageDispatcher.dispatchMessages(MessageDispatcher.java:72)
+com.thoughtworks.gauge.GaugeRuntime.main(GaugeRuntime.java:37)
+23:35:00.283 Plugin [Html Report] with pid [976] has exited
+23:35:00.583 Specifications:	1 executed	0 passed	1 failed	0 skipped
+23:35:00.583 Scenarios:	2 executed	0 passed	2 failed	0 skipped
+23:35:00.588 
+Total time taken: 1.72s

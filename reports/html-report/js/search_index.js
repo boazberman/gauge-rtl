@@ -1,0 +1,1 @@
+var index = {"tags":{"מילה בודדת":["specs\\example.html"]},"specs":{"כותרת האיפיון":["specs\\example.html"]}};
