@@ -23,6 +23,7 @@ body {
     padding: 0;
     outline: 0;
     background: #5d5d5d;
+    direction:rtl;
 }
 
 p {
@@ -353,7 +354,7 @@ header.top .project {
     height: 100%;
     background: #27caa9;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
 }
 
@@ -363,7 +364,7 @@ header.top .project {
     height: 100%;
     background: #e73e48;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
 }
 
@@ -373,7 +374,7 @@ header.top .project {
     height: 100%;
     background: #cccccc;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
 }
 
@@ -383,7 +384,7 @@ header.top .project {
     height: 100%;
     background: #f00;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
 }
 
@@ -581,7 +582,7 @@ header.top .project {
     height: 100%;
     background: #27caa9;
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
 }
 
@@ -615,7 +616,7 @@ header.top .project {
 }
 
 .scenario-head {
-    margin-left: 40px;
+    margin-right: 40px;
     margin-bottom: 20px;
 }
 
@@ -957,9 +958,9 @@ footer p {
     .report_chart .total-specs {
         width: auto;
         margin-top: 1rem;
-        border-right: 5px solid #cccccc;
+        border-left: 5px solid #cccccc;
         border-bottom: none;
-        padding-right: 2rem;
+        padding-left: 2rem;
     }
 
     .report_test-results .active, .report_chart .active {
@@ -975,7 +976,7 @@ footer p {
     }
 
     .report_test-results ul {
-        text-align: left;
+        text-align: right;
         margin-left: 2rem;
     }
 
@@ -1006,7 +1007,7 @@ footer p {
     }
 
     .report_details label {
-        text-align: left;
+        text-align: right;
         padding-right: 0;
         width: 40%;
     }
@@ -1233,7 +1234,7 @@ svg#pie-chart {
     #specificationContainer .spec-head {
         font-size: 1.2rem;
         width: calc(100% - 300px);
-        float:left;
+        float:right;
     }
 
     #specificationContainer .report_test-results {
