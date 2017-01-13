@@ -27,8 +27,8 @@ public class StepImplementation {
     @Step("כמעט לכל המילים יש אמות קריאה <wordsTable>")
     public void verifyVowelsCountInMultipleWords(Table wordsTable) {
         for (TableRow row : wordsTable.getTableRows()) {
-            String word = row.getCell("Word");
-            int expectedCount = Integer.parseInt(row.getCell("Vowel Count"));
+            String word = row.getCell("מילה");
+            int expectedCount = Integer.parseInt(row.getCell("מספר אמות קריאה"));
             int actualCount = countVowels(word);
 
             assertEquals(expectedCount, actualCount);
